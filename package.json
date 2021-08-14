@@ -1,54 +1,52 @@
 {
-  "name": "echo-ui",
-  "description": "React components library",
-  "author": "kito0",
-  "keywords": ["react", "components", "ui"],
-  "version": "0.1.0",
-  "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/kito0/echo-ui.git"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0"
-  }
+	"name": "echo-ui",
+	"description": "React component library",
+	"author": "kito0",
+	"keywords": [
+		"react",
+		"components",
+		"ui"
+	],
+	"version": "1.0.0",
+	"private": false,
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kito0/echo-ui.git"
+	},
+	"scripts": {
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook",
+		"build-lib": "rollup -c"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.14.8",
+		"@babel/core": "^7.15.0",
+		"@babel/preset-react": "^7.14.5",
+		"@rollup/plugin-node-resolve": "^7.1.3",
+		"@storybook/addon-actions": "^6.3.6",
+		"@storybook/addon-essentials": "^6.3.6",
+		"@storybook/addon-links": "^6.3.6",
+		"@storybook/react": "^6.3.6",
+		"babel-loader": "^8.2.2",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"rollup": "^1.32.1",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.0",
+		"rollup-plugin-scss": "^3.0.0",
+		"node-sass": "^6.0.1"
+	},
+	"peerDependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"dependencies": {},
+	"license": "MIT"
 }
