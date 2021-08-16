@@ -1,0 +1,15 @@
+.echo-btn {
+	/* background-color: white; */
+	color: rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	padding: 0 1.5em;
+	letter-spacing: 1px;
+	transition: box-shadow 200ms ease, color 200ms ease;
+}
+.echo-btn:hover,
+.echo-btn:focus {
+	box-shadow: 2px 2px 5px rgba(29, 29, 29, 0.5);
+	color: rgba(0, 0, 0, 0.9);
+	transition: box-shadow 200ms ease, color 200ms ease;
+	cursor: pointer;
+}
