@@ -9,5 +9,5 @@ stories.add('small', () => {
 	return <Button size="1" label="Submit" />;
 });
 stories.add('blue button', () => {
-	return <Button size="1" label="Submit" bg="#000" textColor="green" />;
+	return <Button size="1" label="Submit" bg="blue" textColor="black" />;
 });

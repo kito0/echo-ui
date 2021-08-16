@@ -1,17 +1,18 @@
 import './button.css';
 
-export const Button = ({label, onclick, bg, textColor}) => {
+export const Button = ({className, label, onclick, bg, textColor, disabled}) => {
 	return (
 		<button
-			className={`echo-btn`}
+			className={`echo-btn ${className}`}
 			onClick={() => onclick}
 			aria-label={label}
-			style={
-				{background: bg},
-				{color: {textColor}}
-			}
+			disabled={disabled}
+			style={{
+				background: bg,
+				color: textColor
+			}}
 		>
-			<h4>{label}</h4>
+			<h4>{label ? label : "Submit"}</h4>
 		</button>
 	);
 };
