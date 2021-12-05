@@ -6,8 +6,8 @@ import { Button } from '../components/Button';
 const stories = storiesOf('Button', module);
 
 stories.add('small', () => {
-	return <Button size="1" label="Submit" />;
+	return <Button size="sm" label="Submit" />;
 });
 stories.add('blue button', () => {
-	return <Button size="1" label="Submit" bg="blue" textColor="black" />;
+	return <Button size="md" label="Submit" bg="blue" textColor="black" />;
 });
