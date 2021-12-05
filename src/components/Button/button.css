@@ -3,7 +3,7 @@
 	color: rgba(0, 0, 0, 0.7);
 	border-radius: 15px;
 	padding: 0 1.5em;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	transition: box-shadow 200ms ease, color 200ms ease;
 }
 .echo-btn:hover,

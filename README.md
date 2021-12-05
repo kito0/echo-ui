@@ -2,6 +2,14 @@
 
 A React UI library in production.
 
+## Development
+
+### To start the development server, run
+
+```sh
+npm run storybook
+```
+
 ## Button
 
 ### Import
